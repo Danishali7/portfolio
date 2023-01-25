@@ -2,18 +2,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 1rem;
   height: 90vh;
   padding: 4rem;
 }
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .contactForm {
-  width: 50vw;
+  /* background-color: #fff; */
+  width: 70vw;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -40,17 +42,6 @@
   color: rgb(102, 102, 177);
 }
 
-/* download btn CV */
-.resumeHeading {
-  color: rgb(42, 53, 50);
-  font-size: 3rem;
-}
-.downloadBtn {
-  width: 13rem;
-  color: aliceblue;
-  font-weight: 700;
-}
-
 /* footer */
 .footer {
   background-color: rgb(22, 21, 21);
@@ -66,6 +57,9 @@
 @media screen and (max-width: 1000px) {
   .container {
     width: 100%;
+  }
+  .contactForm {
+    width: 90vw;
   }
 }
 @media screen and (max-width: 848px) {
