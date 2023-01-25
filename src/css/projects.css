@@ -1,0 +1,90 @@
+.projectSection {
+  height: 110vh;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projectHeading {
+  padding: 1.5rem;
+  text-align: center;
+}
+.mainContainer {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.projectImgCont {
+  width: 100%;
+}
+.projectImgCont:hover {
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 0.3s;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+}
+.projectImg {
+  height: 30rem;
+  width: 100%;
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem;
+  height: 4rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+}
+
+/* ============
+ Media queries
+ ============== */
+
+@media screen and (max-width: 1410px) {
+  .mainContainer {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1221px) {
+  .mainContainer {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 848px) {
+  .projectHeading {
+    color: rgb(216, 216, 216);
+  }
+  .title {
+    color: white;
+  }
+}
+@media screen and (max-width: 870px) {
+  .projectImg {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 651px) {
+  .projectSection {
+    height: 120vh;
+  }
+  .mainContainer {
+    width: 85%;
+  }
+  .projectImg {
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 394px) {
+  .mainContainer {
+    width: 95%;
+  }
+  .projectImg {
+    height: 20rem;
+  }
+}

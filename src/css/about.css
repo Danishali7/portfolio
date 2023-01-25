@@ -1,0 +1,208 @@
+.aboutSec {
+  height: 135vh;
+  margin-top: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutHeading {
+  align-self: flex-start;
+  padding-left: 8rem;
+}
+.mySelf {
+  color: #808080;
+  font-size: 1.6rem;
+  width: 80vw;
+  padding: 1rem 1rem 2rem 1rem;
+  line-height: 1.5;
+}
+.container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+}
+.imgCont {
+  max-width: 25vw;
+  height: 60vh;
+  border-radius: 0.4rem;
+}
+.aboutImage {
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 100%;
+}
+.myBio {
+  width: 65%;
+  height: 70vh;
+}
+
+.subject {
+  height: fit-content;
+  height: 12vh;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subjectLogo {
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
+.subject:hover > .subjectLogo {
+  transform: scale(1.4);
+}
+.subjectImg {
+  width: 90%;
+  padding: 0.4rem;
+}
+
+.bar {
+  background-color: rgb(255, 0, 43);
+  height: 0.6rem;
+  border-radius: 0.8rem;
+  width: 85%;
+}
+.barOne {
+  position: relative;
+}
+.barOne::after {
+  content: "";
+  position: absolute;
+  width: 8.5%;
+  height: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  background-color: rgb(189, 189, 189);
+  right: 0;
+}
+.barTwo {
+  position: relative;
+}
+.barTwo::after {
+  content: "";
+  position: absolute;
+  width: 13%;
+  height: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  background-color: rgb(189, 189, 189);
+  right: 0;
+}
+.barThree {
+  position: relative;
+}
+.barThree::after {
+  content: "";
+  position: absolute;
+  width: 8.5%;
+  height: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  background-color: rgb(189, 189, 189);
+  right: 0;
+}
+.barFour {
+  position: relative;
+}
+.barFour::after {
+  content: "";
+  position: absolute;
+  width: 25.5%;
+  height: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  background-color: rgb(189, 189, 189);
+  right: 0;
+}
+.barFive {
+  position: relative;
+}
+.barFive::after {
+  content: "";
+  position: absolute;
+  width: 17%;
+  height: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+  background-color: rgb(189, 189, 189);
+  right: 0;
+}
+.percent {
+  font-size: 1.6rem;
+}
+
+/* ============
+ Media queries
+ ============== */
+
+@media screen and (max-width: 1322px) {
+  .container {
+    width: 95vw;
+  }
+
+  .aboutHeading {
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 1234px) {
+  .imgCont {
+    display: none;
+  }
+  .myBio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .subject {
+    width: 90%;
+  }
+  .mySelf {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 848px) {
+  .aboutHeading {
+    color: rgb(216, 216, 216);
+  }
+  .mySelf {
+    color: white;
+  }
+  .percent {
+    color: white;
+    font-weight: bolder;
+  }
+  .subjectLogo {
+    width: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 848px) {
+  .subject {
+    width: 100%;
+    gap: 1rem;
+  }
+  .aboutSec {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 394px) {
+  .aboutSec {
+    padding: 1rem;
+  }
+  .aboutHeading {
+    padding-left: 1.5rem;
+  }
+  .mySelf {
+    padding-left: 1.5rem;
+  }
+}

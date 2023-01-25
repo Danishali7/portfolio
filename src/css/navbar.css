@@ -1,0 +1,117 @@
+/*++++++++ HEADER ++++++++*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2.5rem;
+  width: 100vw;
+  z-index: 1;
+  transition: all ease-in-out 0.2s;
+  height: 10vh;
+}
+.active {
+  position: fixed;
+  top: 0;
+  background-color: #eff6f9;
+  box-shadow: 0rem 0.2rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+.navLogo {
+  width: 10rem;
+}
+.navLinks {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.5rem;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  width: 35%;
+  padding-right: 3rem;
+}
+.navLinks li {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+.navLinks li a:hover {
+  color: rgb(255, 0, 43);
+}
+
+.hamMenu,
+.closeMenu,
+.hamBtn {
+  display: none;
+}
+
+/* ============
+  Media queries
+  ============
+*/
+@media screen and (max-width: 848px) {
+  .header {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+  .active {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  .navLogo {
+    display: none;
+  }
+  .navLinks {
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    width: 35rem;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    padding: 4rem 0rem;
+    transform: translateX(-35rem);
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+  }
+  .navLinks li {
+    width: 100%;
+    text-align: center;
+  }
+  .hamBtn {
+    display: block;
+    background-color: black;
+    border: none;
+    border-radius: 0.4rem;
+    position: fixed;
+    left: 1.2rem;
+    top: 2rem;
+    padding: 0.6rem;
+  }
+  .hamMenu {
+    display: block;
+    color: #eff6f9;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .hamMenu:hover {
+    color: rgb(255, 0, 43);
+  }
+  .closeMenu {
+    display: block;
+    color: red;
+    font-size: 3rem;
+    position: absolute;
+    left: 1.2rem;
+    top: 2rem;
+    cursor: pointer;
+  }
+}
+.toggleMenu {
+  transform: translateX(0rem);
+}

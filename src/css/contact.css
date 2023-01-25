@@ -1,0 +1,105 @@
+.contactFormCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  height: 90vh;
+  padding: 4rem;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactForm {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.submitBtn {
+  width: 8rem;
+  color: white;
+}
+.inp {
+  padding: 0.5rem;
+}
+.msgArea {
+  resize: none;
+  padding: 0.5rem;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem;
+}
+.contactFormCont span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: rgb(102, 102, 177);
+}
+
+/* download btn CV */
+.resumeHeading {
+  color: rgb(42, 53, 50);
+  font-size: 3rem;
+}
+.downloadBtn {
+  width: 13rem;
+  color: aliceblue;
+  font-weight: 700;
+}
+
+/* footer */
+.footer {
+  background-color: rgb(22, 21, 21);
+  color: white;
+  width: 100vw;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 848px) {
+  .contactHeading {
+    color: rgb(216, 216, 216);
+  }
+  .details span {
+    color: white;
+    font-weight: bold;
+  }
+  .resumeHeading {
+    color: rgb(216, 216, 216);
+  }
+}
+@media screen and (max-width: 498px) {
+  .contactFormCont {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 394px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contactForm {
+    width: 90%;
+  }
+  .resumeHeading {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .contactFormCont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
